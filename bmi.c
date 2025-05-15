@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+//Nombre y Apellido:Santiago Retamozo
+//Legajo: 98417
 int main(int argc, char *argv[]) {
 	float PESO, ALTURA, IMC;
 	//PEDIR DATOS AL USUARIO
