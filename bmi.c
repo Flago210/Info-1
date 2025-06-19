@@ -3,11 +3,21 @@
 //Legajo: 98417
 int main(int argc, char *argv[]) {
 	float PESO, ALTURA, IMC;
-	//PEDIR DATOS AL USUARIO
+	//PEDIR PESO
+	do{
 	printf ("Ingrese el peso en Kilogramos: ");
 	scanf ("%f", &PESO);
+	if (PESO <= 0)
+		printf ("Error, el peso no puede ser un valor negativo");
+	}while (PESO <= 0 );
+
+	//PEDIR ALTURA
+	do{
 	printf ("Ingrese la altura en Metros: ");
 	scanf ("%f", &ALTURA);
+	if (ALTURA <= 0)
+		printf ("Error, la altura no puede ser un valor negativo");
+	}while (ALTURA <= 0);
 	//REALIZAR EL CALCULO
 	IMC = PESO / (ALTURA * ALTURA);
 	//MOSTRAR EL RESULTADO
